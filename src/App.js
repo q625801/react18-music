@@ -3,7 +3,7 @@ import { useRoutes } from "react-router-dom"
 import routes from "@/router"
 import Header from "components/header"
 import Audio from "components/audio"
-import Menu from "components/Index/Menu"
+import Menu from "components/Menu"
 import styled from "styled-components"
 const AppWrapper = styled.div`
     width: 1022px;

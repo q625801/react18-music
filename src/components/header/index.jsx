@@ -1,6 +1,7 @@
-import React from "react"
+import React,{memo} from "react"
 import { HeaderWrapper } from "./style"
 const Header = () => {
+    console.log('header')
     return (
         <HeaderWrapper>
             <div className="nav-logo clear fl">
@@ -25,4 +26,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default memo(Header)

@@ -1,5 +1,6 @@
-import React, { useState } from "react"
+import React, { useState,memo } from "react"
 import { MenuWrapper } from "./style"
+import { useGoPage } from "utils/hooks"
 const Menu = () => {
     let MenuList = [
         {
@@ -14,6 +15,8 @@ const Menu = () => {
         }
     ]
     const [MenuOn, setMenuOn] = useState(1)
+    let [Gopage] = useGoPage()
+    console.log('menu2')
     return (
         <MenuWrapper className="clear">
             <div className="primary-menu">
@@ -24,7 +27,7 @@ const Menu = () => {
                                 MenuOn === item.id ? "on" : ""
                             }`}
                             key={item.name}
-                            onClick={() => setMenuOn(item.id)}
+                            onClick={() => {setMenuOn(item.id);Gopage(item.path,{})}}
                         >
                             {item.name}
                         </span>
