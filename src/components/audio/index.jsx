@@ -1,11 +1,12 @@
-import React from 'react'
+import React,{memo} from 'react'
 
-const Audio = () => {
+const Audio = memo(() => {
+  console.log('audio render')
   return (
     <div>
         audio
     </div>
   )
-}
+})
 
 export default Audio

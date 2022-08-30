@@ -26,6 +26,7 @@ const AppWrapper = styled.div`
 `
 function App() {
     const element = useRoutes(routes)
+    console.log('app render')
     return (
         <AppWrapper>
             <Header />

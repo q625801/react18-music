@@ -1,4 +1,4 @@
-import React, { useState,memo } from "react"
+import React, { useState } from "react"
 import { MenuWrapper } from "./style"
 import { useGoPage } from "utils/hooks"
 const Menu = () => {
@@ -16,7 +16,6 @@ const Menu = () => {
     ]
     const [MenuOn, setMenuOn] = useState(1)
     let [Gopage] = useGoPage()
-    console.log('menu2')
     return (
         <MenuWrapper className="clear">
             <div className="primary-menu">
