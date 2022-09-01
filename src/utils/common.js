@@ -11,3 +11,27 @@ export const myDate = (data) => {
     let time = year + "-" + month + "-" + date;    //（格式化"yyyy-MM-dd"）     
     return time
 }
+
+export const formatPlaycount = (playCount) => {
+    return playCount > 100000000 ? (playCount/100000000).toString().split(".")[0] + "亿" : playCount > 10000 ? (playCount/10000).toString().split(".")[0] + "万" : playCount
+}
+
+export const minutes = (times) => {
+    var minutes = Math.floor(times / (1000 * 60)) % 60; //计算剩余的分钟
+    if (minutes < 10) {
+      return "0" + minutes;
+    } else {
+      return minutes;
+    }
+  }
+export const seconds = (times) => {
+    var seconds = Math.floor(times / 1000) % 60; //计算剩余的秒数
+    if (seconds < 10) {
+      return "0" + seconds;
+    } else {
+      return seconds;
+    }
+}
+export const playtime = (time) => {
+    return minutes(time) + ":" + seconds(time)
+}
