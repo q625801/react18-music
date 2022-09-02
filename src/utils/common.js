@@ -35,3 +35,11 @@ export const seconds = (times) => {
 export const playtime = (time) => {
     return minutes(time) + ":" + seconds(time)
 }
+export const Shuffle = (arr) => {
+  let res = [],random
+  while (arr.length > 0) {
+    random = Math.random() * arr.length
+    res.push(arr.splice(random,1)[0])
+  }
+  return res
+}

@@ -21,8 +21,12 @@ const reducer = (state = initState,action) => {
             state.audioInfo.audioFlag = action.value
             return state
         case 'setAudioPlayBtn':
-            state.audioInfo.audioPlayBtn = action.value
-            return state
+            return {
+                audioInfo:{
+                    ...state.audioInfo,
+                    audioPlayBtn:action.value
+                }
+            }
         case 'setAudioInfo':
             if(state.audioInfo.SongInfo.SongId === action.SongInfo.SongId){
                 return state
