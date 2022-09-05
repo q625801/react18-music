@@ -3,6 +3,7 @@ import Index from "pages/Index"
 import Psnlrecommend from "components/Index/Psnlrecommend"
 import Rankversion from "components/Index/Rankversion"
 import Podcast from "pages/podcast"
+import Everydaysongrmd from "pages/everydaysongrmd"
 const routes = [
     {
         path: "/",
@@ -25,6 +26,10 @@ const routes = [
     {
         path: "/podcast",
         element: <Podcast />
+    },
+    {
+        path: "/everydaysongrmd",
+        element: <Everydaysongrmd />
     }
 ]
 
