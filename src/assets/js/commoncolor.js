@@ -18,10 +18,10 @@ export const artistsonglistcheckall = "#292929"
 
 export const albumpublishTime = "#878787"
 
-export const albumsongsheetinfo_color = "#85B9E6"
-export const albumsongsheetinfo_hovercolor = "#B3CEE5"
+export const albumsongsheetinfocolor = "#85B9E6"
+export const albumsongsheetinfohovercolor = "#B3CEE5"
 
-export const albumsongsheetinfo_hoverbtnbg = "#D83E3E"
+export const albumsongsheetinfohoverbtnbg = "#D83E3E"
 
 export const bodercolor = "#434343"
 

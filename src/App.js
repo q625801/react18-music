@@ -11,6 +11,7 @@ const AppWrapper = styled.div`
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    color: #d0d0d0;
     .international-home {
         height: 538px;
         background: #ffffff;
@@ -26,7 +27,7 @@ const AppWrapper = styled.div`
 `
 function App() {
     const element = useRoutes(routes)
-    console.log('app render')
+    console.log("app render")
     return (
         <AppWrapper>
             <Header />
